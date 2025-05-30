@@ -20,7 +20,7 @@ fn main() {
 }
 ```
 
-We created MPUI because Rust needs an end-all, cross-platform, GPU-accelerated UI framework.
+We created MPUI because Rust needs an end-all, cross-platform, GPU-accelerated, desktop UI framework.
 
 ## Overview
 
