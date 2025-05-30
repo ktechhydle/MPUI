@@ -31,3 +31,10 @@ MPUI user interfaces can be created all in native rust. No macros, no extra ui-r
 > **Huge library**
 
 MPUI not only includes a widget for that one specific thing (`mpui::ui`), it includes types (`mpui::types`) for various tools too! Colors, fonts, threading, and more can be used.
+
+## Steps
+As of right now, MPUI is under active development. Below is our "roadmap" to final release:
+
+- [ ] Basic main window rendering and management (MWindow)
+- [ ] Basic widget and layout engine (MWidget, MLayout)
+- [ ] Widget rendering (MDrawer)
