@@ -4,17 +4,17 @@
 _At some point, you need to bake your own bread._
 
 ```rust
-use mpui::ui::{MWindow, MText}
-use mpui::types::{MColor}
+use mpui::ui::{MWindow, MText};
+use mpui::types::{MColor};
 
 fn main() {
-    let window = MWindow {
-        title: "MPUI Window",
-        background: MColor::from_hex("#ffffff")
-    }
-    let text = MText {
-        label: "Hello, World!"
-    }
+    let mut window = MWindow::new();
+    window.set_title("MPUI Window".to_string());
+    window.set_background_color(MColor::from_hex("#ffffff".to_string()));
+
+    let mut text = MText::new();
+    text.set_text("Hello, World!".to_string());
+
     window.set_primary_widget(text);
     window.show();
 }
@@ -33,8 +33,8 @@ MPUI user interfaces can be created all in native rust. No macros, no extra ui-r
 MPUI not only includes a widget for that one specific thing (`mpui::ui`), it includes types (`mpui::types`) for various tools too! Colors, fonts, threading, and more can be used.
 
 ## Steps
-As of right now, MPUI is under active development. Below is our "roadmap" to final release:
+As of right now, MPUI is under active development. Below is our roadmap to final release:
 
-- [ ] Basic main window rendering and management (MWindow)
+- [ ] Basic window rendering and creation (MWindow)
 - [ ] Basic widget and layout engine (MWidget, MLayout)
-- [ ] Widget rendering (MDrawer)
+- [ ] Widget rendering (MRenderer)
