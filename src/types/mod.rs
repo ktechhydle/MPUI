@@ -1,3 +1,3 @@
-pub mod mcolor;
+mod mcolor;
 
 pub use mcolor::MColor;
